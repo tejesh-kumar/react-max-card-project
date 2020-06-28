@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 
 // import Post from '../../components/Post/Post';
 // import FullPost from './FullPost/FullPost';
-// import NewPost from './NewPost/NewPost';
+import NewPost from './NewPost/NewPost';
 import Posts from './Posts/Posts';
 import './Blog.css';
 
@@ -25,7 +25,8 @@ class Blog extends Component {
                 {/* <Route path="/" exact render={() => <h1>Home</h1>} />
                 <Route path="/" exact render={() => <h1>Home 2</h1>} /> */}
 
-                <Route path="/" exact component={Posts}  />
+                <Route path="/" exact component={Posts} /> 
+                <Route path="/new-post" component={NewPost} /> 
 
                 {/* <Posts /> */}
                 {/* <section>
